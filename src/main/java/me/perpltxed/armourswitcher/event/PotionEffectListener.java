@@ -1,8 +1,8 @@
-package me.perpltxed.armourswitcher.event;
+package me.perpltxed.armorswitcher.event;
 
-import me.perpltxed.armourswitcher.ArmourSwitcher;
-import me.perpltxed.armourswitcher.armormanager.ArmorManager;
-import me.perpltxed.armourswitcher.util.EventUtil;
+import me.perpltxed.armorswitcher.ArmorSwitcher;
+import me.perpltxed.armorswitcher.armormanager.ArmorManager;
+import me.perpltxed.armorswitcher.util.EventUtil;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -10,10 +10,10 @@ import org.bukkit.event.entity.EntityPotionEffectEvent;
 import org.bukkit.scheduler.BukkitRunnable;
 
 public class PotionEffectListener implements Listener {
-    ArmourSwitcher plugin;
+    ArmorSwitcher plugin;
     ArmorManager armorManager;
 
-    public PotionEffectListener(ArmourSwitcher pl, ArmorManager am){
+    public PotionEffectListener(ArmorSwitcher pl, ArmorManager am){
         this.plugin = pl;
         this.armorManager = am;
         EventUtil.register(this, pl);

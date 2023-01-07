@@ -1,7 +1,7 @@
-package me.perpltxed.armourswitcher.armormanager;
+package me.perpltxed.armorswitcher.armormanager;
 
-import me.perpltxed.armourswitcher.util.ItemUtil;
-import me.perpltxed.armourswitcher.util.StrUtil;
+import me.perpltxed.armorswitcher.util.ItemUtil;
+import me.perpltxed.armorswitcher.util.StrUtil;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 

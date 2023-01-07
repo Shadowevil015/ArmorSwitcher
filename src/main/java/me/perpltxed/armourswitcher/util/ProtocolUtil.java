@@ -1,4 +1,4 @@
-package me.perpltxed.armourswitcher.util;
+package me.perpltxed.armorswitcher.util;
 
 
 import com.comphenix.protocol.ProtocolManager;

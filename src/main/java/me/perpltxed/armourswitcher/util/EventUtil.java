@@ -1,4 +1,4 @@
-package me.perpltxed.armourswitcher.util;
+package me.perpltxed.armorswitcher.util;
 
 import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;

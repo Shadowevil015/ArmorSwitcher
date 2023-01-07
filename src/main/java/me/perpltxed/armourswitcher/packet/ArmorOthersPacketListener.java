@@ -1,4 +1,4 @@
-package me.perpltxed.armourswitcher.packet;
+package me.perpltxed.armorswitcher.packet;
 
 import com.comphenix.protocol.PacketType;
 import com.comphenix.protocol.ProtocolManager;
@@ -8,10 +8,10 @@ import com.comphenix.protocol.events.PacketEvent;
 import com.comphenix.protocol.wrappers.EnumWrappers;
 import com.comphenix.protocol.wrappers.Pair;
 
-import me.perpltxed.armourswitcher.ArmourSwitcher;
-import me.perpltxed.armourswitcher.util.ItemUtil;
+import me.perpltxed.armorswitcher.ArmorSwitcher;
+import me.perpltxed.armorswitcher.util.ItemUtil;
 
-import me.perpltxed.armourswitcher.util.ProtocolUtil;
+import me.perpltxed.armorswitcher.util.ProtocolUtil;
 import org.bukkit.Material;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
@@ -20,9 +20,9 @@ import org.bukkit.inventory.ItemStack;
 import java.util.List;
 
 public class ArmorOthersPacketListener {
-    private ArmourSwitcher pl;
+    private ArmorSwitcher pl;
 
-    public ArmorOthersPacketListener(ArmourSwitcher pl, ProtocolManager manager){
+    public ArmorOthersPacketListener(ArmorSwitcher pl, ProtocolManager manager){
         this.pl = pl;
         manager.addPacketListener(new PacketAdapter(pl, PacketType.Play.Server.ENTITY_EQUIPMENT) {
             @Override

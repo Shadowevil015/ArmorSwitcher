@@ -1,16 +1,16 @@
-package me.perpltxed.armourswitcher.command;
+package me.perpltxed.armorswitcher.command;
 
-import me.perpltxed.armourswitcher.ArmourSwitcher;
-import me.perpltxed.armourswitcher.util.CommandUtil;
-import me.perpltxed.armourswitcher.util.StrUtil;
+import me.perpltxed.armorswitcher.ArmorSwitcher;
+import me.perpltxed.armorswitcher.util.CommandUtil;
+import me.perpltxed.armorswitcher.util.StrUtil;
 import org.bukkit.command.CommandSender;
 
 import java.io.IOException;
 
 public class HiddenArmorCommand {
-    ArmourSwitcher plugin;
+    ArmorSwitcher plugin;
 
-    public HiddenArmorCommand(ArmourSwitcher pl){
+    public HiddenArmorCommand(ArmorSwitcher pl){
         this.plugin = pl;
 
         new CommandUtil(plugin, "hiddenarmor", 0, 1, false, true){

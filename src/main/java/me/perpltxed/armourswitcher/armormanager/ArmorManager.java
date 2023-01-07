@@ -1,4 +1,4 @@
-package me.perpltxed.armourswitcher.armormanager;
+package me.perpltxed.armorswitcher.armormanager;
 
 import com.comphenix.protocol.PacketType;
 import com.comphenix.protocol.ProtocolManager;
@@ -6,9 +6,9 @@ import com.comphenix.protocol.events.PacketContainer;
 import com.comphenix.protocol.wrappers.EnumWrappers;
 import com.comphenix.protocol.wrappers.Pair;
 import com.google.common.collect.Multimap;
-import me.perpltxed.armourswitcher.ArmourSwitcher;
-import me.perpltxed.armourswitcher.util.ItemUtil;
-import me.perpltxed.armourswitcher.util.ProtocolUtil;
+import me.perpltxed.armorswitcher.ArmorSwitcher;
+import me.perpltxed.armorswitcher.util.ItemUtil;
+import me.perpltxed.armorswitcher.util.ProtocolUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.attribute.AttributeModifier;
@@ -25,10 +25,10 @@ import java.util.Map;
 
 
 public class ArmorManager {
-    private ArmourSwitcher plugin;
+    private ArmorSwitcher plugin;
     private ProtocolManager manager;
 
-    public ArmorManager(ArmourSwitcher pl , ProtocolManager pm){
+    public ArmorManager(ArmorSwitcher pl , ProtocolManager pm){
         this.plugin = pl;
         this.manager = pm;
     }

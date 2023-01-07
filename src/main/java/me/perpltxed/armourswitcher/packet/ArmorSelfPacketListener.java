@@ -1,4 +1,4 @@
-package me.perpltxed.armourswitcher.packet;
+package me.perpltxed.armorswitcher.packet;
 
 import com.comphenix.protocol.PacketType;
 import com.comphenix.protocol.ProtocolManager;
@@ -7,8 +7,8 @@ import com.comphenix.protocol.events.PacketAdapter;
 import com.comphenix.protocol.events.PacketContainer;
 import com.comphenix.protocol.events.PacketEvent;
 
-import me.perpltxed.armourswitcher.ArmourSwitcher;
-import me.perpltxed.armourswitcher.armormanager.ArmorManager;
+import me.perpltxed.armorswitcher.ArmorSwitcher;
+import me.perpltxed.armorswitcher.armormanager.ArmorManager;
 
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
@@ -17,7 +17,7 @@ import java.util.List;
 
 public class ArmorSelfPacketListener {
 
-    public ArmorSelfPacketListener(ArmourSwitcher pl, ProtocolManager manager, ArmorManager armorManager){
+    public ArmorSelfPacketListener(ArmorSwitcher pl, ProtocolManager manager, ArmorManager armorManager){
         PacketAdapter.AdapterParameteters params = PacketAdapter.params().plugin(pl)
                 .listenerPriority(ListenerPriority.HIGH)
                 .types(PacketType.Play.Server.SET_SLOT, PacketType.Play.Server.WINDOW_ITEMS);

@@ -1,5 +1,5 @@
-name: ArmourSwitcher
+name: ArmorSwitcher
 version: '${project.version}'
-main: me.perpltxed.armourswitcher.ArmourSwitcher
+main: me.perpltxed.armorswitcher.ArmorSwitcher
 api-version: 1.19
 depend: [ProtocolLib]

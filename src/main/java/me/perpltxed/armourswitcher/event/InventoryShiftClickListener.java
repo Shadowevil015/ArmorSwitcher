@@ -1,8 +1,8 @@
-package me.perpltxed.armourswitcher.event;
+package me.perpltxed.armorswitcher.event;
 
-import me.perpltxed.armourswitcher.ArmourSwitcher;
-import me.perpltxed.armourswitcher.armormanager.ArmorManager;
-import me.perpltxed.armourswitcher.util.EventUtil;
+import me.perpltxed.armorswitcher.ArmorSwitcher;
+import me.perpltxed.armorswitcher.armormanager.ArmorManager;
+import me.perpltxed.armorswitcher.util.EventUtil;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -13,10 +13,10 @@ import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.scheduler.BukkitRunnable;
 
 public class InventoryShiftClickListener implements Listener {
-    ArmourSwitcher plugin;
+    ArmorSwitcher plugin;
     ArmorManager armorManager;
 
-    public InventoryShiftClickListener(ArmourSwitcher pl, ArmorManager am){
+    public InventoryShiftClickListener(ArmorSwitcher pl, ArmorManager am){
         this.plugin = pl;
         this.armorManager = am;
         EventUtil.register(this, pl);

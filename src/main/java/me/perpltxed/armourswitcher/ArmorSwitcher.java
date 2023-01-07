@@ -1,17 +1,17 @@
-package me.perpltxed.armourswitcher;
+package me.perpltxed.armorswitcher;
 
 import com.comphenix.protocol.ProtocolLibrary;
 import com.comphenix.protocol.ProtocolManager;
-import me.perpltxed.armourswitcher.command.HiddenArmorCommand;
-import me.perpltxed.armourswitcher.command.ToggleArmorCommand;
-import me.perpltxed.armourswitcher.event.EntityToggleGlideListener;
-import me.perpltxed.armourswitcher.event.GameModeListener;
-import me.perpltxed.armourswitcher.event.PotionEffectListener;
-import me.perpltxed.armourswitcher.event.InventoryShiftClickListener;
-import me.perpltxed.armourswitcher.packet.ArmorOthersPacketListener;
-import me.perpltxed.armourswitcher.packet.ArmorSelfPacketListener;
-import me.perpltxed.armourswitcher.armormanager.ArmorManager;
-import me.perpltxed.armourswitcher.util.StrUtil;
+import me.perpltxed.armorswitcher.command.HiddenArmorCommand;
+import me.perpltxed.armorswitcher.command.ToggleArmorCommand;
+import me.perpltxed.armorswitcher.event.EntityToggleGlideListener;
+import me.perpltxed.armorswitcher.event.GameModeListener;
+import me.perpltxed.armorswitcher.event.PotionEffectListener;
+import me.perpltxed.armorswitcher.event.InventoryShiftClickListener;
+import me.perpltxed.armorswitcher.packet.ArmorOthersPacketListener;
+import me.perpltxed.armorswitcher.packet.ArmorSelfPacketListener;
+import me.perpltxed.armorswitcher.armormanager.ArmorManager;
+import me.perpltxed.armorswitcher.util.StrUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.configuration.InvalidConfigurationException;
@@ -19,7 +19,6 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.potion.PotionEffectType;
 
 import java.io.File;
 import java.io.IOException;
@@ -27,7 +26,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 import java.util.logging.Level;
-public final class ArmourSwitcher extends JavaPlugin {
+public final class ArmorSwitcher extends JavaPlugin {
 
     private File enabledPlayersFile = null;
     private FileConfiguration enabledPlayers;

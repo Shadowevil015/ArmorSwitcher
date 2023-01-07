@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>me.perpltxed</groupId>
-    <artifactId>armour-switcher</artifactId>
+    <artifactId>armor-switcher</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Armour Switcher</name>
+    <name>armor Switcher</name>
 
     <properties>
         <java.version>1.8</java.version>

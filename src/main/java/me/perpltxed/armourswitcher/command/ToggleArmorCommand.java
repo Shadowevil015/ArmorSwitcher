@@ -1,9 +1,9 @@
-package me.perpltxed.armourswitcher.command;
+package me.perpltxed.armorswitcher.command;
 
-import me.perpltxed.armourswitcher.ArmourSwitcher;
-import me.perpltxed.armourswitcher.armormanager.ArmorManager;
-import me.perpltxed.armourswitcher.util.CommandUtil;
-import me.perpltxed.armourswitcher.util.StrUtil;
+import me.perpltxed.armorswitcher.ArmorSwitcher;
+import me.perpltxed.armorswitcher.armormanager.ArmorManager;
+import me.perpltxed.armorswitcher.util.CommandUtil;
+import me.perpltxed.armorswitcher.util.StrUtil;
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.Bukkit;
@@ -11,10 +11,10 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class ToggleArmorCommand {
-    ArmourSwitcher plugin;
+    ArmorSwitcher plugin;
     ArmorManager armorManager;
 
-    public ToggleArmorCommand(ArmourSwitcher pl, ArmorManager am){
+    public ToggleArmorCommand(ArmorSwitcher pl, ArmorManager am){
         armorManager = am;
         plugin = pl;
         new CommandUtil(plugin,"togglearmor", 0,1, true, plugin.isToggleDefault()){
