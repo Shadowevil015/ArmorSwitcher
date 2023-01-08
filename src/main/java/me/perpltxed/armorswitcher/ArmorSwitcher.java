@@ -28,6 +28,7 @@ import java.util.UUID;
 import java.util.logging.Level;
 public final class ArmorSwitcher extends JavaPlugin {
 
+    private static final FakeArmorPacketListener fakeArmorPacketListener = null;
     private File enabledPlayersFile = null;
     private FileConfiguration enabledPlayers;
 
@@ -44,7 +45,7 @@ public final class ArmorSwitcher extends JavaPlugin {
 
     private List<String> hiddenPlayers = new ArrayList<>();
     private List<UUID> ignoredPlayers;
-
+    
     @Override
     public void onEnable() {
 
@@ -83,7 +84,7 @@ public final class ArmorSwitcher extends JavaPlugin {
         new EntityToggleGlideListener(this, armorManager);
 
         // this breaks the code surely
-        getServer().getPluginManager().registerEvents(new PlayerTeleportListener(this.fakeArmorPacketListener), this);
+        getServer().getPluginManager().registerEvents(new PlayerTeleportListener(ArmorSwitcher.fakeArmorPacketListener), this);
 
     }
 
