@@ -153,4 +153,7 @@ public class ArmorManager {
             return Material.CRIMSON_BUTTON;
         return null;
     }
+
+    public void updateOther(Player player, Player otherPlayer) {
+    }
 }
