@@ -12,8 +12,6 @@ import me.perpltxed.armorswitcher.packet.ArmorOthersPacketListener;
 import me.perpltxed.armorswitcher.packet.ArmorSelfPacketListener;
 import me.perpltxed.armorswitcher.armormanager.ArmorManager;
 import me.perpltxed.armorswitcher.util.StrUtil;
-import me.perpltxed.armorswitcher.PlayerTeleportListener;
-import me.perpltxed.armorswitcher.FakeArmorPacketListener;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.configuration.InvalidConfigurationException;
@@ -83,6 +81,9 @@ public final class ArmorSwitcher extends JavaPlugin {
         new GameModeListener(this, armorManager);
         new PotionEffectListener(this, armorManager);
         new EntityToggleGlideListener(this, armorManager);
+
+        // this breaks the code surely
+        getServer().getPluginManager().registerEvents(new PlayerTeleportListener(this.fakeArmorPacketListener), this);
 
     }
 
