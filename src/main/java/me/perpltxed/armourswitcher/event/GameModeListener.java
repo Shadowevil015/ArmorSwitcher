@@ -35,6 +35,4 @@ public class GameModeListener implements Listener {
             }.runTaskLater(plugin, 1L);
         }
     }
-
-
 }

@@ -47,6 +47,7 @@ public final class ArmorSwitcher extends JavaPlugin {
 
     @Override
     public void onEnable() {
+
         // Default config file
         this.saveDefaultConfig();
         checkConfig();

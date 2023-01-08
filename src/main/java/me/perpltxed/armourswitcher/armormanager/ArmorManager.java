@@ -7,6 +7,7 @@ import com.comphenix.protocol.wrappers.EnumWrappers;
 import com.comphenix.protocol.wrappers.Pair;
 import com.google.common.collect.Multimap;
 import me.perpltxed.armorswitcher.ArmorSwitcher;
+import me.perpltxed.armorswitcher.armormanager.ArmorManagerUtil;
 import me.perpltxed.armorswitcher.util.ItemUtil;
 import me.perpltxed.armorswitcher.util.ProtocolUtil;
 import org.bukkit.Bukkit;
@@ -83,6 +84,7 @@ public class ArmorManager {
 
         // Adding item durability percentage to lore, if it has it
         String durability = ArmorManagerUtil.getItemDurability(itemStack);
+
         if(durability!=null) lore.add(durability);
 
         // ArmoredElytra mod compatibility
